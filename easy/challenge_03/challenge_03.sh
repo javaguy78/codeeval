@@ -1,25 +1,29 @@
 #!/bin/bash
 
 function isPrime {
-
     ip_test=${1}
-    if [[ ${ip_test} -eq 1 ]]; then 
-	return 1 
-    fi
-    if [[ ${ip_test} -eq 2 ]]; then 
-	return 0 
-    fi
-    ip_sqrt=$(echo "sqrt (${ip_test})" | bc)
-    ((ip_sqrt++))
-    for mod in `seq 2 ${ip_sqrt}`
-    do
-	let " remainder = $ip_test % $mod "
-	if [[ ${remainder} -eq 0 ]]; then
-	    return 1
-	fi
-    done
-    return 0
+    case ${ip_test} in 
+	1) return 1 ;;
+	2) return 0 ;;
+	*)
+	    # Get rid of evens without looping
+	    let "even = ${ip_test} % 2"
+	    if [[ ${even} -eq 0 ]]; then
+		return 1
+	    fi
 
+	    # Effeciently loop through odds with only odd divisors
+	    ip_sqrt=$(echo "sqrt (${ip_test}) +1" | bc)
+	    for (( mod=3 ; mod < ip_sqrt ; mod+=2 ))
+	    do
+		let "remainder = ${ip_test} % ${mod}"
+		if [[ ${remainder} -eq 0 ]]; then
+		    return 1
+		fi
+	    done
+	    return 0
+	    ;;
+    esac
 }
 
 function isPalindrome {
