@@ -1,7 +1,7 @@
-package code.eval.easy;
+package code.eval.easy.challenge_03;
 
-// Largest palindrome prime less than 1000
-public class Challenge3 {
+// Challenge 3: Largest palindrome prime less than 1000
+public class Main {
 
     public static void main(String[] args) {
         for (int i = 1000; i > 0; i--) {
@@ -13,22 +13,28 @@ public class Challenge3 {
     }
 
     private static boolean isPrime(int in) {
-        if (in <= 1) { return false; }
-        if (in == 2) { return true; }
-        for (int i = 2 ; i < Math.sqrt(in) + 1 ; i++ ) {
-            if (in % i == 0) { return false; }
+        switch (in) {
+            case 1  : return false;
+            case 2  : return true;
+            default :
+                // get rid of evens
+                if (in % 2 == 0) return false;
+
+                // efficiently loop through rest
+                for (int i = 3; i < Math.sqrt(in) + 1; i++) {
+                    if (in % i == 0) return false;
+                }
         }
         return true;
     }
 
     private static boolean isPalindrome(int in) {
         String strIn = "" + in;
-        for (int i = 0; i <= (strIn.length() / 2) ; i++ ) {
-            if (strIn.charAt(i) != strIn.charAt(strIn.length() - (i + 1))) {
+        for (int i = 0, j = strIn.length() - 1; i < j ; i++, j-- ) {
+            if (strIn.charAt(i) != strIn.charAt(j)) {
                 return false;
             }
         }
         return true;
     }
-
 }

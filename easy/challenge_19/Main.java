@@ -1,12 +1,12 @@
-package code.eval.easy;
+package code.eval.easy.challenge_19;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-// Bit Positions
-public class Challenge19 {
+// Challenge 19: Bit Positions
+public class Main {
 
     static File inputFile;
 

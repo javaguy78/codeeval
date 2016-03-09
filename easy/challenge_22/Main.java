@@ -1,12 +1,12 @@
-package code.eval.easy;
+package code.eval.easy.challenge_22;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-// Nth Fibonacci Element
-public class Challenge22 {
+// Challenge 22: Nth Fibonacci Element
+public class Main {
 
     static File inputFile;
 

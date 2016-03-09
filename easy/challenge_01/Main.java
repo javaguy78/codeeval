@@ -1,9 +1,9 @@
-package code.eval.easy;
+package code.eval.easy.challenge_01;
 
 import java.io.*;
 
-// Fizz Buzz
-public class Challenge1 {
+// Challenge 1: Fizz Buzz
+public class Main {
 
     private static int divisor1, divisor2, limit;
 

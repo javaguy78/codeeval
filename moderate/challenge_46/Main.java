@@ -1,12 +1,12 @@
-package code.eval.medium;
+package code.eval.medium.challenge_46;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-// Primes less than X
-public class Challenge46 {
+// Challenge 46: Primes less than X
+public class Main {
 
     static File inputFile;
 

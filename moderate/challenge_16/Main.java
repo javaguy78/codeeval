@@ -1,12 +1,12 @@
-package code.eval.medium;
+package code.eval.medium.challenge_16;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-// Number of Ones
-public class Challenge16 {
+// Challenge 16: Number of Ones
+public class Main {
 
     static File inputFile;
 

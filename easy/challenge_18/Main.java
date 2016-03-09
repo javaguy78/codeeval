@@ -1,12 +1,12 @@
-package code.eval.easy;
+package code.eval.easy.challenge_18;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-// Multiples of a Number
-public class Challenge18 {
+// Challenge 18: Multiples of a Number
+public class Main {
 
     static File inputFile;
 

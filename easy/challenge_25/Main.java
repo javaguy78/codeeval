@@ -1,7 +1,7 @@
-package code.eval.easy;
+package code.eval.easy.challenge_25;
 
-// Odd Numbers
-public class Challenge25 {
+// Challenge 25: Odd Numbers
+public class Main {
 
     public static void main(String[] args) {
         for(int i = 1 ; i < 100 ; i++) {

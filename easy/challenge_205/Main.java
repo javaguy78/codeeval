@@ -1,12 +1,12 @@
-package code.eval.easy;
+package code.eval.easy.challenge_205;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-// Clean Up The Words
-public class Challenge205 {
+// Challenge 205: Clean Up The Words
+public class Main {
 
     static File inputFile;
 

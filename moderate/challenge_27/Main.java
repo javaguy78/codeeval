@@ -1,12 +1,12 @@
-package code.eval.medium;
+package code.eval.medium.challenge_27;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-// Decimal to Binary
-public class Challenge27 {
+// Challenge 27: Decimal to Binary
+public class Main {
 
     static File inputFile;
 

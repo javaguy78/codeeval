@@ -1,12 +1,12 @@
-package code.eval.hard;
+package code.eval.hard.challenge_52;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-// Text representation of Integers
-public class Challenge52 {
+// Challenge 52: Text representation of Integers
+public class Main {
 
     static File inputFile;
 

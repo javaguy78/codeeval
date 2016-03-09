@@ -1,4 +1,4 @@
-package code.eval.easy;
+package code.eval.easy.challenge_39;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -6,8 +6,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-// Happy Numbers
-public class Challenge39 {
+// Challenge 39: Happy Numbers
+public class Main {
 
     static File inputFile;
 

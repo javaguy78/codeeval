@@ -1,12 +1,12 @@
-package code.eval.easy;
+package code.eval.easy.challenge_21;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-// Sum of specified integers
-public class Challenge21 {
+// Challenge 21: Sum of specified integers
+public class Main {
     
     static File inputFile;
 

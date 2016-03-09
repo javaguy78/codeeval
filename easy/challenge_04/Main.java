@@ -1,7 +1,7 @@
-package code.eval.easy;
+package code.eval.easy.challenge_04;
 
-// Sum of first 1000 primes
-public class Challenge4 {
+// Challenge 4: Sum of first 1000 primes
+public class Main {
 
     static int totalSum = 0;
     static int primesFound = 0;
