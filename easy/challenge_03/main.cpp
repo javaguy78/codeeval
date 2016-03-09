@@ -22,21 +22,22 @@ bool isPrime(int test) {
 }
 
 bool isPalindrome(int input) {
-    std::string test = "" + input;
+    std::string test = std::to_string(input);
     for (int i = 0, j = test.length() - 1 ; i < j ; i++, j-- ) {
-        if (test[i] != test[j])
+        if (test.at(i) != test.at(j))
             return false;
     }
     return true;
 }
 
 int main(int argc, char ** argv) {
-    for (int i = 1000; i > 0 ; i++) {
+    for (int i = 1000; i > 0 ; i--) {
         if (isPrime(i)) {
             if (isPalindrome(i)) {
                 std::cout << i << std::endl;
+		return 0;
             }
         }
     }
-    return 0;
+    return 1;
 }
