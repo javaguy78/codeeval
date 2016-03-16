@@ -1,7 +1,7 @@
 #!/bin/bash
 #
-# Challenge 08
-# Reverse the order of words in input file
+# Challenge 19: binary bits are equal
+#
 #############################################
 
 while read -r line; do

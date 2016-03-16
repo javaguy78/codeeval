@@ -1,7 +1,7 @@
 #!/bin/bash
 #
-# Challenge 08
-# Reverse the order of words in input file
+# Challenge 18: print multiple greater than x
+#
 #############################################
 
 function checkNGreaterThanX {
