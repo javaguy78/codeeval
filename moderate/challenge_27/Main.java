@@ -1,4 +1,4 @@
-package code.eval.medium.challenge_27;
+package code.eval.moderate.challenge_27;
 
 import java.io.BufferedReader;
 import java.io.File;

@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.3)
-project(.)
+project(codeeval)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 function (challenge difficulty val)
-    add_executable(challenge_${val} ${difficulty}/challenge_${val}/main.cpp)
+    add_executable(challenge_${val} codeeval/${difficulty}/challenge_${val}/main.cpp)
 endfunction(challenge)
 
 challenge(easy 03) # Prime Palendrome

@@ -1,4 +1,4 @@
-package code.eval.medium.challenge_15;
+package code.eval.moderate.challenge_15;
 
 import java.nio.ByteOrder;
 
