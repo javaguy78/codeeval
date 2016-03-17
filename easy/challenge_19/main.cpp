@@ -2,8 +2,6 @@
 // Easy: Bit Positions
 #include <iostream>
 #include <fstream>
-#include <vector>
-#include <sstream>
 using namespace std;
 
 int getBit(int val, int bit) {
