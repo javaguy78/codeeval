@@ -2,37 +2,33 @@
 // Easy: Bit Positions
 #include <iostream>
 #include <fstream>
-#include <string>
 #include <vector>
 #include <sstream>
 using namespace std;
 
-void bitPositions(int input, int pos1, int pos2) { 
-  std::string binary;
-  do {
-    binary.push_back(0 + (input & 1));
-  } while (input >>=1);
-  if (binary.at(pos1 - 1) == binary.at(pos2 - 1)) {
-    cout << "true" << endl;
-  } else {
-    cout << "false" << endl;
-  }
+int getBit(int val, int bit) {
+  return (val & (1 << bit)) >> bit;
+}
+
+bool bitPositions(int input, int pos1, int pos2) {
+  return getBit(input, pos1 - 1) == getBit(input, pos2 - 1);
 }
 
 int main(int argc, char ** argv) {
   std::ifstream inFile {argv[1]};
-  string line;
-  while (std::getline(inFile, line)) {
-    std::vector<int> vals;
-    std::stringstream ss(line);
-    int i;
-    while (ss >> i) {
-      vals.push_back(i);
-      if (ss.peek() == ',') {
-	ss.ignore();
-      }
+  int digit;
+  while (inFile >> digit){
+    int bitPosition1, bitPosition2;
+    char input;
+    inFile.get(input); // eat a comma
+    inFile >> bitPosition1;
+    inFile.get(input); // eat a comma
+    inFile >> bitPosition2;
+    if (bitPositions(digit, bitPosition1, bitPosition2)) {
+      std::cout << "true" << std::endl;
+    } else {
+      std::cout << "false" << std::endl;
     }
-    bitPositions(vals.at(0), vals.at(1), vals.at(2));
   }
   return 0;
 }

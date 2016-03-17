@@ -3,28 +3,37 @@
 #include <iostream>
 #include <math.h>
 
-int sum = 0;
-int primes = 0;
+int sum = 2;
+int primes = 1;
 
 bool isPrime(int test) {
-  if (test <= 1) return false;
-  if (test == 2) return true;
-  for (int i = 2; i < sqrt (test) + 1 ; i++) {
-    if (test % i == 0) return false;
-  }
-  return true;
+    switch (test) {
+        case 1  : return false;
+        case 2  : return true;
+        default : {
+            if (test % 2 == 0) {
+                return false;
+            } else {
+                auto root = sqrt(test) + 1;
+                for (auto i = 3; i < root; i++) {
+                    if (test % i == 0) return false;
+                }
+                return true;
+            }
+        }
+    }
 }
 
-int main(int argc, char ** argv) {
-    int number = 1;
+int main(int argc, char **argv) {
+    int number = 3;
     do {
-      if (isPrime(number)) {
-	sum += number;
-	primes++;
-      }
-      number++;
+        if (isPrime(number)) {
+            sum += number;
+            primes++;
+        }
+        number+=2;
     } while (primes < 1000);
-    
-    std::cout << sum;
+
+    std::cout << sum << std::endl;
     return 0;
 }
