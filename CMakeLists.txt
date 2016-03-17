@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 3.3)
+project(.)
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+
+function (challenge difficulty val)
+    add_executable(challenge_${val} ${difficulty}/challenge_${val}/main.cpp)
+endfunction(challenge)
+
+challenge(easy 03) # Prime Palendrome
+challenge(easy 04) # Prime Sums
+challenge(easy 19) # Bit Positions
+challenge(easy 22) # Nth Fibonacci Digit
+challenge(easy 25) # Odd Numbers
