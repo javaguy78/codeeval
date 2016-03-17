@@ -14,14 +14,9 @@ bool bitPositions(int input, int pos1, int pos2) {
 
 int main(int argc, char ** argv) {
   std::ifstream inFile {argv[1]};
-  int digit;
-  while (inFile >> digit){
-    int bitPosition1, bitPosition2;
-    char input;
-    inFile.get(input); // eat a comma
-    inFile >> bitPosition1;
-    inFile.get(input); // eat a comma
-    inFile >> bitPosition2;
+  int digit, bitPosition1, bitPosition2;
+  char gulp;
+  while (inFile >> digit >> gulp >> bitPosition1 >> gulp >> bitPosition2){
     if (bitPositions(digit, bitPosition1, bitPosition2)) {
       std::cout << "true" << std::endl;
     } else {
