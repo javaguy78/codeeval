@@ -10,6 +10,7 @@ endfunction(challenge)
 challenge(easy 01) # FizzBuzz
 challenge(easy 03) # Prime Palendrome
 challenge(easy 04) # Prime Sums
+challenge(easy 08) # Reverse Strings
 challenge(easy 19) # Bit Positions
 challenge(easy 22) # Nth Fibonacci Digit
 challenge(easy 25) # Odd Numbers
