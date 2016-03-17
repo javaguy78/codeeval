@@ -7,6 +7,7 @@ function (challenge difficulty val)
     add_executable(challenge_${val} codeeval/${difficulty}/challenge_${val}/main.cpp)
 endfunction(challenge)
 
+challenge(easy 01) # FizzBuzz
 challenge(easy 03) # Prime Palendrome
 challenge(easy 04) # Prime Sums
 challenge(easy 19) # Bit Positions
