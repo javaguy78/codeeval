@@ -4,7 +4,7 @@ project(codeeval)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 function (challenge difficulty val)
-    add_executable(challenge_${val} ${difficulty}/challenge_${val}/main.cpp)
+    add_executable(challenge_${val} codeeval/${difficulty}/challenge_${val}/main.cpp)
 endfunction(challenge)
 
 challenge(easy 01) # FizzBuzz
@@ -17,3 +17,4 @@ challenge(easy 20) # Strings to lower
 challenge(easy 21) # Sum of Digits
 challenge(easy 22) # Nth Fibonacci Digit
 challenge(easy 25) # Odd Numbers
+challenge(easy 39) # Happy Numbers
