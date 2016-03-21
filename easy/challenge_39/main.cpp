@@ -2,35 +2,31 @@
 // Challenge 39 : Happy Number
 #include <iostream>
 #include <fstream>
-#include <stack>
+#include <vector>
+#include <algorithm>
+
 using namespace std;
 
-std::stack<int> foundNumbers;
+std::vector<int> foundNumbers;
 
 int sumOfDigitSquares(int in) {
-    std::stack<int> digits;
+    std::vector<int> digits;
     int sum = 0;
     while(in > 0) {
-            digits.push(in % 10);
-            sum += (digits.top() * digits.top());
+            digits.push_back(in % 10);
+            sum += (digits.back() * digits.back());
             in /= 10;
         }
     return sum;
 }
 
 bool haveWeSeenThisNumberBefore(int number) {
-    std::stack<int> looped;
-    while(!foundNumbers.empty()) {
-        if (number == foundNumbers.top()) {
-            return true;
-        } else {
-            looped.push(foundNumbers.top());
-            foundNumbers.pop();
-        }
+    if (std::find(foundNumbers.begin(), foundNumbers.end(), number) != foundNumbers.end()) {
+        return true;
+    } else {
+        foundNumbers.push_back(number);
+        return false;
     }
-    looped.push(number);
-    foundNumbers = looped;
-    return false;
 }
 
 int isHappy(int number) {
@@ -48,9 +44,7 @@ int main(int argc, char ** args) {
 
     while(input >> number) {
         std::cout << isHappy(number) << std::endl;
-        while(!foundNumbers.empty()) { // clean out found numbers;
-            foundNumbers.pop();
-        }
+        foundNumbers.clear();
     }
 
 }
