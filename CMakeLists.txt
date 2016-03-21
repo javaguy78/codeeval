@@ -18,3 +18,5 @@ challenge(easy 21) # Sum of Digits
 challenge(easy 22) # Nth Fibonacci Digit
 challenge(easy 25) # Odd Numbers
 challenge(easy 39) # Happy Numbers
+challenge(easy 93) # Capitalize Strings
+
