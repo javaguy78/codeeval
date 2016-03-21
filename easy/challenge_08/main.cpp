@@ -2,25 +2,30 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <stack>
+
 using namespace std;
 
 int main(int argc, char ** argv) {
 
-    std::fstream input {argv[1]};
+    std::ifstream input {argv[1]};
     std::string line;
 
     while (std::getline(input, line)) {
-        std::string out;
+        std::stack<std::string> reversed;
         std::string word;
         std::stringstream ss(line);
         while (ss >> word) {
-            if (out.empty()) {
-                out = word;
-            } else {
-                out = word + " " + out;
-            }
+            reversed.push(word);
+            reversed.push(" ");
         }
-        std::cout << out << std::endl;
+        reversed.pop(); // lose the first space;
+        while(!reversed.empty()) {
+            std::cout << reversed.top();
+            reversed.pop();
+        }
+        std::cout << std::endl;
+        flush(std::cout);
     }
 
     return 0;
