@@ -1,7 +1,10 @@
-package code.eval.easy.challenge_03;
+package easy;
 
-// Challenge 3: Largest palindrome prime less than 1000
-public class Main {
+/**
+ * Challenge 03 : Largest Palindrome prime < 1000
+ * Created by cschalk on 3/21/16.
+ */
+public class Challenge03 {
 
     public static void main(String[] args) {
         for (int i = 1000; i > 0; i--) {

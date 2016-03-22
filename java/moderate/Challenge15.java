@@ -1,9 +1,12 @@
-package code.eval.moderate.challenge_15;
+package moderate;
 
 import java.nio.ByteOrder;
 
-// Challenge 15: Endianness of the system
-public class Main {
+/**
+ * Challenge 15 : Endianness
+ * Created by cschalk on 3/21/16.
+ */
+public class Challenge15 {
 
     public static void main(String[] args) {
        if (java.nio.ByteOrder.nativeOrder() == ByteOrder.LITTLE_ENDIAN) {

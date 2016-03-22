@@ -1,51 +1,30 @@
-package code.eval.easy.challenge_01;
+package easy;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 
-// Challenge 1: Fizz Buzz
-public class Main {
+/**
+ * Challenge 01 : FizzBuzz
+ * Created by cschalk on 3/21/16.
+ */
+public class Challenge01 {
 
-    private static int divisor1, divisor2, limit;
-
-    public static void main(String[] args) {
+    public static void main (String[] args) throws Exception {
         File file = new File(args[0]);
-
-        if (!file.exists()) {
-            System.err.println("Please specify a valid file name");
-            System.exit(1);
-        }
-
-        try {
-            BufferedReader in = new BufferedReader(new FileReader(file));
-            String gameInput;
-            while ((gameInput = in.readLine()) != null) {
-                playFizzBuzz(gameInput);
-            }
-
-        } catch (IOException e) {
-            System.err.println("Error reading from file...");
-            System.exit(1);
+        BufferedReader buffer = new BufferedReader(new FileReader(file));
+        String line;
+        while ((line = buffer.readLine()) != null) {
+            playFizzBuzz(line);
         }
     }
 
-    private static void playFizzBuzz(String gameInput) {
-        parseGameNumbers(gameInput);
-        playGame();
-    }
+    private static void playFizzBuzz(String input) {
+        String[] values = input.split(" ");
+        int divisor1 = Integer.parseInt(values[0]);
+        int divisor2 = Integer.parseInt(values[1]);
+        int limit = Integer.parseInt(values[2]);
 
-    private static void parseGameNumbers(String input) {
-        String[] vals = input.split(" ");
-        try {
-            divisor1 = Integer.parseInt(vals[0]);
-            divisor2 = Integer.parseInt(vals[1]);
-            limit = Integer.parseInt(vals[2]);
-        } catch (Exception e) {
-            System.err.println("Please enter numerical values only");
-            System.exit(1);
-        }
-    }
-
-    private static void playGame() {
         StringBuilder out = new StringBuilder();
         for (int i = 1 ; i <= limit ; i++) {
             boolean fizz = i % divisor1 == 0;
@@ -60,7 +39,6 @@ public class Main {
                 out.append(i).append(" ");
             }
         }
-
         System.out.println(out.toString().trim());
     }
 }

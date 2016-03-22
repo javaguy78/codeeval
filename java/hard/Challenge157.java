@@ -1,49 +1,35 @@
-package code.eval.hard.challenge_157;
+package hard;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.io.IOException;
-import java.util.*;
+import java.util.LinkedList;
 
-// Challenge 157: The Labyrinth
-public class Main {
+/**
+ * Challenge 157 : The Labyrinth
+ * Created by cschalk on 3/21/16.
+ */
+public class Challenge157 {
 
-    static String originalMaze = "";
-    static File inputFile;
-    static int width;
+    private static String originalMaze = "";
+    private static int width;
 
-    public static void main(String[] args) {
-        getInputFile(args[0]);
-        readMaze();
+    public static void main(String[] args) throws Exception {
+        readMaze(args[0]);
         MazeSolver solver = new MazeSolver(originalMaze, width);
         String solved = solver.solve();
         printMaze(solved);
     }
 
-    private static void getInputFile(String fileName) {
-        inputFile = new File(fileName);
-
-        if (!inputFile.exists()) {
-            System.err.println("Please specify a valid file name");
-            System.exit(1);
-        }
-    }
-
-    private static void readMaze() {
-        try {
-            BufferedReader in = new BufferedReader(new FileReader(inputFile));
-            String mazeLine;
-            mazeLine = in.readLine();
-            width = mazeLine.length();
-            do {
-                originalMaze += mazeLine;
-            } while ((mazeLine = in.readLine()) != null);
-
-        } catch (IOException e) {
-            System.err.println("Error reading from file...");
-            System.exit(1);
-        }
+    private static void readMaze(String fileName) throws Exception {
+        File inputFile = new File(fileName);
+        BufferedReader in = new BufferedReader(new FileReader(inputFile));
+        String mazeLine;
+        mazeLine = in.readLine();
+        width = mazeLine.length();
+        do {
+            originalMaze += mazeLine;
+        } while ((mazeLine = in.readLine()) != null);
     }
 
     private static void printMaze(String maze) {
@@ -57,10 +43,10 @@ public class Main {
 
 class MazeSolver {
 
-    final String ORIGINAL_MAZE;
-    int height, width, start, end;
-    LinkedList<Integer> path = new LinkedList<>();
-    CellInfo[] cells;
+    private final String ORIGINAL_MAZE;
+    private final int height, width, start, end;
+    private final LinkedList<Integer> path = new LinkedList<>();
+    private CellInfo[] cells;
 
     public MazeSolver(String originalMaze, int width) {
         this.ORIGINAL_MAZE = originalMaze;
@@ -136,8 +122,8 @@ class MazeSolver {
 }
 
 class CellInfo {
-    private int score;
-    private int coordinate;
+    private final int score;
+    private final int coordinate;
 
     public CellInfo(int score, int coordinate) {
         this.score = score;
@@ -148,16 +134,9 @@ class CellInfo {
         return score;
     }
 
-    public void setScore(int score) {
-        this.score = score;
-    }
-
     public int getCoordinate() {
         return coordinate;
     }
 
-    public void setCoordinate(int coordinate) {
-        this.coordinate = coordinate;
-    }
 }
 

@@ -1,48 +1,29 @@
-package code.eval.easy.challenge_39;
+package easy;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
 
-// Challenge 39: Happy Numbers
-public class Main {
+/**
+ * Challenge 39 : Happy Numbers
+ * Created by cschalk on 3/21/16.
+ */
+public class Challenge39 {
 
-    static File inputFile;
-
-    public static void main(String[] args) {
-        getInputFile(args[0]);
-        doWork();
-    }
-
-    private static void getInputFile(String fileName) {
-        inputFile = new File(fileName);
-
-        if (!inputFile.exists()) {
-            System.err.println("Please specify a valid file name");
-            System.exit(1);
+    public static void main (String[] args) throws Exception {
+        File file = new File(args[0]);
+        BufferedReader buffer = new BufferedReader(new FileReader(file));
+        String line;
+        while ((line = buffer.readLine()) != null) {
+            processHappyOrNot(line);
         }
     }
 
-    private static void doWork() {
-        try {
-            BufferedReader in = new BufferedReader(new FileReader(inputFile));
-            String bitInput;
-            while ((bitInput = in.readLine()) != null) {
-                processHappyOrNot(bitInput);
-            }
-
-        } catch (IOException e) {
-            System.err.println("Error reading from file...");
-            System.exit(1);
-        }
-    }
-
-    static ArrayList seenList = new ArrayList();
+    private static ArrayList<Integer> seenList = new ArrayList<>();
 
     private static void processHappyOrNot(String input) {
-        seenList = new ArrayList();
+        seenList = new ArrayList<>();
         isHappyOrNot(Integer.parseInt(input));
     }
 

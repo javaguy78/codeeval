@@ -1,10 +1,13 @@
-package code.eval.easy.challenge_04;
+package easy;
 
-// Challenge 4: Sum of first 1000 primes
-public class Main {
+/**
+ * Challenge 04 : Sum first 1000 primes
+ * Created by cschalk on 3/21/16.
+ */
+public class Challenge04 {
 
-    static int totalSum = 0;
-    static int primesFound = 0;
+    private static int totalSum = 0;
+    private static int primesFound = 0;
 
     public static void main(String[] args) {
         int test = 1;

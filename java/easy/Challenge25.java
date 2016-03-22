@@ -1,7 +1,10 @@
-package code.eval.easy.challenge_25;
+package easy;
 
-// Challenge 25: Odd Numbers
-public class Main {
+/**
+ * Challenge 25 : Print all odd numbers
+ * Created by cschalk on 3/21/16.
+ */
+public class Challenge25 {
 
     public static void main(String[] args) {
         for(int i = 1 ; i < 100 ; i+=2) {
@@ -10,5 +13,4 @@ public class Main {
             }
         }
     }
-
 }
