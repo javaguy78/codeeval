@@ -1,3 +1,4 @@
+# Created by cschalk on 3/21/16.
 cmake_minimum_required(VERSION 3.3)
 project(codeeval)
 
