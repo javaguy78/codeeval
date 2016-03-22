@@ -1,5 +1,5 @@
-// Challenge 4: 
-// Easy: Sum of first 1000 primes
+// Created by cschalk on 3/21/16.
+// Challenge 04 : Sum of first 1000 primes
 #include <iostream>
 #include <math.h>
 

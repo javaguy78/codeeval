@@ -1,5 +1,5 @@
-// Challenge 19:
-// Easy: Bit Positions
+// Created by cschalk on 3/21/16.
+// Challenge 19 : Bit Positions
 #include <iostream>
 #include <fstream>
 using namespace std;

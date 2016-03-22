@@ -1,5 +1,5 @@
-// Challenge 03:
-// Larges prime palindrome less than 1000
+// Created by cschalk on 3/21/16.
+// Challenge 03 : Largest prime palindrome less than 1000
 #include <iostream>
 #include <math.h>
 using namespace std;

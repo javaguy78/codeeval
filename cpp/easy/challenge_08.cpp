@@ -1,4 +1,5 @@
-// challenge 08: Reverse string word order.
+// Created by cschalk on 3/21/16.
+// challenge 08 : Reverse string word order.
 #include <iostream>
 #include <fstream>
 #include <sstream>

@@ -1,5 +1,5 @@
 // Created by cschalk on 3/20/16.
-// Challenge 21 - Sum of digits in a number
+// Challenge 21 : Sum of digits in a number
 #include <fstream>
 #include <iostream>
 

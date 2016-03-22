@@ -1,5 +1,5 @@
-// Challenge 22:
-// Print the nth digit of the Fibonacci sequence
+// Created by cschalk on 3/21/16.
+// Challenge 22 : Print the nth digit of the Fibonacci sequence
 #include <iostream>
 #include <fstream>
 

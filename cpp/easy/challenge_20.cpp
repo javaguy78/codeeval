@@ -1,5 +1,5 @@
-// Challenge 20: Strings to lower.
 // Created by cschalk on 3/20/16.
+// Challenge 20 : Strings to lower.
 #include <fstream>
 #include <iostream>
 #include <locale>
