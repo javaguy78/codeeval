@@ -5,10 +5,18 @@
 #include <vector>
 #include <algorithm>
 
-#define CONTAINS(vector, value) (std::find(vector.begin(), vector.end(), value) != vector.end())
-#define REMOVE(vector, value) (vector.erase(std::remove(vector.begin(), vector.end(), value), vector.end()))
-
 using namespace std;
+
+template<typename T, typename U>
+inline bool contains(T const &t, U const &u) {
+    auto result = std::find(t.begin(), t.end(), u);
+    return result != t.end();
+}
+
+template<typename T, typename U>
+inline void remove(T &t, U const &u) {
+    t.erase(std::remove(t.begin(), t.end(), u), t.end());
+}
 
 int main(int argc, char ** args) {
     std::ifstream input {args[1]};
@@ -20,11 +28,11 @@ int main(int argc, char ** args) {
         foundDuplicates.clear();
         foundLetters.clear();
         for (std::string::size_type i = 0 ; i < line.length() ; ++i ) {
-            if (!(CONTAINS(foundDuplicates, line[i]))) {
-                if (!(CONTAINS(foundLetters, line[i]))) {
+            if (!contains(foundDuplicates, line[i])) {
+                if (!contains(foundLetters, line[i])) {
                     foundLetters.push_back(line[i]);
                 } else {
-                    REMOVE(foundLetters, line[i]);
+                    remove(foundLetters, line[i]);
                     foundDuplicates.push_back(line[i]);
                 }
             }
