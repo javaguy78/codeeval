@@ -5,8 +5,8 @@
 #include <vector>
 #include <algorithm>
 
-#define CONTAINS(x, y) (std::find(x.begin(), x.end(), y) != x.end())
-#define REMOVE(x, y) (x.erase(std::remove(x.begin(), x.end(), y), x.end()))
+#define CONTAINS(vector, value) (std::find(vector.begin(), vector.end(), value) != vector.end())
+#define REMOVE(vector, value) (vector.erase(std::remove(vector.begin(), vector.end(), value), vector.end()))
 
 using namespace std;
 
