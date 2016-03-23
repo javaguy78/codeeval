@@ -21,3 +21,5 @@ challenge(easy 25)  # Odd Numbers
 challenge(easy 39)  # Happy Numbers
 challenge(easy 93)  # Capitalize Strings
 challenge(easy 205) # Clean Up Words
+
+challenge(moderate 12) # First Non Duplicate Letter
