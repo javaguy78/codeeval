@@ -5,6 +5,9 @@
 #include <vector>
 #include <algorithm>
 
+#define CONTAINS(x, y) (std::find(x.begin(), x.end(), y) != x.end())
+#define REMOVE(x, y) (x.erase(std::remove(x.begin(), x.end(), y), x.end()))
+
 using namespace std;
 
 int main(int argc, char ** args) {
@@ -17,11 +20,11 @@ int main(int argc, char ** args) {
         foundDuplicates.clear();
         foundLetters.clear();
         for (std::string::size_type i = 0 ; i < line.length() ; ++i ) {
-            if (std::find(foundDuplicates.begin(), foundDuplicates.end(), line[i]) == foundDuplicates.end()) {
-                if (std::find(foundLetters.begin(), foundLetters.end(), line[i]) == foundLetters.end()) {
+            if (!(CONTAINS(foundDuplicates, line[i]))) {
+                if (!(CONTAINS(foundLetters, line[i]))) {
                     foundLetters.push_back(line[i]);
                 } else {
-                    foundLetters.erase(std::remove(foundLetters.begin(), foundLetters.end(), line[i]), foundLetters.end());
+                    REMOVE(foundLetters, line[i]);
                     foundDuplicates.push_back(line[i]);
                 }
             }
