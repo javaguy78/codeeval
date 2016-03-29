@@ -23,3 +23,5 @@ challenge(easy 93)  # Capitalize Strings
 challenge(easy 205) # Clean Up Words
 
 challenge(moderate 12) # First Non Duplicate Letter
+
+challenge(hard 239) # Quick as a flash
