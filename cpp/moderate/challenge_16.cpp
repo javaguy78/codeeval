@@ -4,10 +4,6 @@
 #include <fstream>
 #include <bitset>
 
-int getBit(int val, int bit) {
-    return (val & (1 << bit)) >> bit;
-}
-
 int main(int argc, char ** argv) {
     std::ifstream input {argv[1]};
     int test;
