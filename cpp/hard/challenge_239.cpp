@@ -9,34 +9,33 @@ using namespace std;
 
 int pivots;
 
-void quickSort(int arr[], int left, int right) {
-    int i = left, j = right;
-    int tmp;
-    int pivot = arr[(left + right) / 2];
-    pivots++;
-
-    /* partition */
-    while (i <= j) {
-        while (arr[i] < pivot)
-            i++;
-        while (arr[j] > pivot)
-            j--;
-        if (i <= j) {
-            tmp = arr[i];
+int partition(int * arr, int left, int right) {
+    int pivotValue = arr[left];
+    int i = left;
+    int j = right;
+    for ( ; ; ) {
+        while (arr[j] > pivotValue) j--;
+        while (arr[i] < pivotValue) i++;
+        if (i < j) {
+            int tmp = arr[i];
             arr[i] = arr[j];
             arr[j] = tmp;
-            i++;
-            j--;
-        }
-    };
+        } else
+            return j;
+    }
+}
 
-    /* recursion */
-    if (left < j)  quickSort(arr, left, j);
-    if (i < right) quickSort(arr, i, right);
+void quickSort(int * arr, int left, int right) {
+    int index = partition(arr, left, right);
+    pivots++;
+    if (left < index - 1)
+        quickSort(arr, left, index - 1);
+    if (index + 1 < right)
+        quickSort(arr, index + 1, right);
 }
 
 int main(int argc, char ** argv) {
-    ifstream input {argv[1]};
+    ifstream input{argv[1]};
     string line;
 
     while (getline(input, line)) {
