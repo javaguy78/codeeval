@@ -25,6 +25,7 @@ challenge(easy 205) # Clean Up Words
 challenge(moderate 12) # First Non Duplicate Letter
 challenge(moderate 15) # Endianness
 challenge(moderate 16) # Number of Ones
+challenge(moderate 27) # Decimal to Binary
 
 challenge(hard 157) # The Labyrinth
 challenge(hard 239) # Quick as a flash
