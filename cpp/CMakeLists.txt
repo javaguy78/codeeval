@@ -27,6 +27,7 @@ challenge(moderate 15) # Endianness
 challenge(moderate 16) # Number of Ones
 challenge(moderate 27) # Decimal to Binary
 challenge(moderate 46) # Primes less than X
+challenge(moderate 89) # Pass Triangle
 
 challenge(hard 157) # The Labyrinth
 challenge(hard 239) # Quick as a flash
