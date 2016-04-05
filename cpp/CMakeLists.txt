@@ -22,12 +22,13 @@ challenge(easy 39)  # Happy Numbers
 challenge(easy 93)  # Capitalize Strings
 challenge(easy 205) # Clean Up Words
 
-challenge(moderate 12) # First Non Duplicate Letter
-challenge(moderate 15) # Endianness
-challenge(moderate 16) # Number of Ones
-challenge(moderate 27) # Decimal to Binary
-challenge(moderate 46) # Primes less than X
-challenge(moderate 89) # Pass Triangle
+challenge(moderate 12)  # First Non Duplicate Letter
+challenge(moderate 15)  # Endianness
+challenge(moderate 16)  # Number of Ones
+challenge(moderate 27)  # Decimal to Binary
+challenge(moderate 46)  # Primes less than X
+challenge(moderate 89)  # Pass Triangle
+challenge(moderate 158) # Interrupted Bubble Sort
 
 challenge(hard 157) # The Labyrinth
 challenge(hard 239) # Quick as a flash
