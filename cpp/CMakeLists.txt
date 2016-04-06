@@ -30,5 +30,6 @@ challenge(moderate 46)  # Primes less than X
 challenge(moderate 89)  # Pass Triangle
 challenge(moderate 158) # Interrupted Bubble Sort
 
+challenge(hard 52)  # Text Dollars
 challenge(hard 157) # The Labyrinth
 challenge(hard 239) # Quick as a flash
