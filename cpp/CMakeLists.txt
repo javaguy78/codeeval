@@ -18,11 +18,13 @@ challenge(easy 20)  # Strings to lower
 challenge(easy 21)  # Sum of Digits
 challenge(easy 22)  # Nth Fibonacci Digit
 challenge(easy 23)  # 12x12 Multiplication Table
+challenge(easy 24)  # Sum of numbers in a file
 challenge(easy 25)  # Odd Numbers
 challenge(easy 39)  # Happy Numbers
 challenge(easy 93)  # Capitalize Strings
 challenge(easy 113) # Multiply Lists
 challenge(easy 205) # Clean Up Words
+challenge(easy 240) # Mersenne Numbers less than x
 
 challenge(moderate 12)  # First Non Duplicate Letter
 challenge(moderate 15)  # Endianness
