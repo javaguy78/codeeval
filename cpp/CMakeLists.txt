@@ -17,6 +17,7 @@ challenge(easy 19)  # Bit Positions
 challenge(easy 20)  # Strings to lower
 challenge(easy 21)  # Sum of Digits
 challenge(easy 22)  # Nth Fibonacci Digit
+challenge(easy 23)  # 12x12 Multiplication Table
 challenge(easy 25)  # Odd Numbers
 challenge(easy 39)  # Happy Numbers
 challenge(easy 93)  # Capitalize Strings
