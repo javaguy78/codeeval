@@ -23,6 +23,7 @@ challenge(easy 25)  # Odd Numbers
 challenge(easy 39)  # Happy Numbers
 challenge(easy 93)  # Capitalize Strings
 challenge(easy 113) # Multiply Lists
+challenge(easy 140) # Data Recovery
 challenge(easy 205) # Clean Up Words
 challenge(easy 208) # Find the highest score
 challenge(easy 240) # Mersenne Numbers less than x
