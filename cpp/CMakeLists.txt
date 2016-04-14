@@ -26,6 +26,7 @@ challenge(easy 113) # Multiply Lists
 challenge(easy 140) # Data Recovery
 challenge(easy 205) # Clean Up Words
 challenge(easy 208) # Find the highest score
+challenge(easy 235) # Simple or Trump
 challenge(easy 240) # Mersenne Numbers less than x
 
 challenge(moderate 12)  # First Non Duplicate Letter
