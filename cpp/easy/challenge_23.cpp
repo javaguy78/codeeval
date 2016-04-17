@@ -3,8 +3,7 @@
 #include <iostream>
 using namespace std;
 
-string trim(const string &str, const string &space = " \t")
-{
+string trim(const string &str, const string &space = " \t") {
     const auto strBegin = str.find_first_not_of(space);
     if (strBegin == std::string::npos)
         return ""; // no content
