@@ -28,6 +28,7 @@ challenge(easy 167) # Read More
 challenge(easy 205) # Clean Up Words
 challenge(easy 208) # Find the highest score
 challenge(easy 235) # Simple or Trump
+challenge(easy 237) # Panacea - Truth or Lie
 challenge(easy 240) # Mersenne Numbers less than x
 
 challenge(moderate 12)  # First Non Duplicate Letter
