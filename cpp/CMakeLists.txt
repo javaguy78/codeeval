@@ -27,6 +27,7 @@ challenge(easy 140) # Data Recovery
 challenge(easy 167) # Read More
 challenge(easy 205) # Clean Up Words
 challenge(easy 208) # Find the highest score
+challenge(easy 214) # Time to Eat
 challenge(easy 235) # Simple or Trump
 challenge(easy 237) # Panacea - Truth or Lie
 challenge(easy 240) # Mersenne Numbers less than x
