@@ -25,6 +25,7 @@ challenge(easy 93)  # Capitalize Strings
 challenge(easy 113) # Multiply Lists
 challenge(easy 140) # Data Recovery
 challenge(easy 167) # Read More
+challenge(easy 183) # Details
 challenge(easy 205) # Clean Up Words
 challenge(easy 208) # Find the highest score
 challenge(easy 214) # Time to Eat
