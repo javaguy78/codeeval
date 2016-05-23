@@ -20,15 +20,20 @@ challenge(easy 22)  # Nth Fibonacci Digit
 challenge(easy 23)  # 12x12 Multiplication Table
 challenge(easy 24)  # Sum of numbers in a file
 challenge(easy 25)  # Odd Numbers
+challenge(easy 26)  # File Size
+challenge(easy 29)  # Unique Values
 challenge(easy 39)  # Happy Numbers
 challenge(easy 93)  # Capitalize Strings
 challenge(easy 113) # Multiply Lists
 challenge(easy 140) # Data Recovery
 challenge(easy 167) # Read More
 challenge(easy 183) # Details
+challenge(easy 199) # String Mask
 challenge(easy 205) # Clean Up Words
 challenge(easy 208) # Find the highest score
 challenge(easy 214) # Time to Eat
+challenge(easy 220) # Trick or Treat
+challenge(easy 222) # The Black Spot
 challenge(easy 235) # Simple or Trump
 challenge(easy 237) # Panacea - Truth or Lie
 challenge(easy 240) # Mersenne Numbers less than x
