@@ -23,6 +23,7 @@ challenge(easy 25)  # Odd Numbers
 challenge(easy 26)  # File Size
 challenge(easy 29)  # Unique Values
 challenge(easy 39)  # Happy Numbers
+challenge(easy 91)  # Simple Sort;
 challenge(easy 93)  # Capitalize Strings
 challenge(easy 113) # Multiply Lists
 challenge(easy 122) # Hidden Digits
