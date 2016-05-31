@@ -25,6 +25,7 @@ challenge(easy 29)  # Unique Values
 challenge(easy 39)  # Happy Numbers
 challenge(easy 93)  # Capitalize Strings
 challenge(easy 113) # Multiply Lists
+challenge(easy 122) # Hidden Digits
 challenge(easy 140) # Data Recovery
 challenge(easy 167) # Read More
 challenge(easy 183) # Details
