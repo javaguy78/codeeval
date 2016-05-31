@@ -27,6 +27,7 @@ challenge(easy 93)  # Capitalize Strings
 challenge(easy 113) # Multiply Lists
 challenge(easy 122) # Hidden Digits
 challenge(easy 140) # Data Recovery
+challenge(easy 156) # Rollercoaster Text
 challenge(easy 167) # Read More
 challenge(easy 183) # Details
 challenge(easy 199) # String Mask
